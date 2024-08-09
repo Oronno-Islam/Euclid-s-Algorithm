@@ -30,7 +30,7 @@ def EuclidAlgo2(a, b):
   n1 = max(a,b)
   n2 = min(a,b)
   if n1 % n2 != 0:
-    EuclidAlgo2(n2, n1 % n2)
+    return EuclidAlgo2(n2, n1 % n2)
   else:
     return n2  
 
